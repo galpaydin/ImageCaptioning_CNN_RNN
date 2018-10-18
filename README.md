@@ -6,7 +6,9 @@
 3. Image Captionin model contains:
 3.1 Pretrained CNN encoder (last hidden layer of IncetionV3) as an image embedding to RNN
 3.2 RNN
-4. You may reach (py) and (jpynd) codes from code/image_captioning.py & image_captioning.jpynd files   
+4. You may reach (py) and (jpynd) codes from code/image_captioning.py file.
+5. For fast training of RNN: Better to incorporate code/image_captioning.py to jupiter notebook and follow the following Google Colab steps!!!
+6. Images-files shall be downloaded and train-test-eval files shall be generated (links were given in code/image_captioning.py).
 
 
 # ML_Image Captioning resources
