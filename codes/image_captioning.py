@@ -1,9 +1,8 @@
 
 # coding: utf-8
 
-# # Voice description of streming_Images
-# Topology uses RNN for Image captioning than uses text to voice trained network
-# for final voice conversion
+# # Captioning of Images
+# Topology uses Pre-trained InceptionV3 model for CNN encoder and RNN for Image captioning
 # 
 
 import sys
@@ -36,7 +35,8 @@ import random
 from random import choice
 import os
 
-#import text to speach module (for usage of image2speech_API
+#you modifie for caption (text) to voice conversion by importing text to speach module (for usage of image2speech_API
+# just incorporate to the last stage after creation of caption for each image. Be carefull for sycronization (increase sleep time)!!!
 #-----------------------------
 
 #from Txt2Speech_API.tts import *
@@ -64,12 +64,12 @@ speak.Speak("This is the pc voice speaking")
 
 
 # linked them here
-download_utils.link_week_6_resources()
+# 
 
 
 # # Extract image features
 # 
-# Pre-trained InceptionV3 model for CNN encoder waa used (https://research.googleblog.com/2016/03/train-your-own-image-classifier-with.html) and extract its last hidden layer as an embedding:
+# Pre-trained InceptionV3 model for CNN encoder was used (https://research.googleblog.com/2016/03/train-your-own-image-classifier-with.html) and extract its last hidden layer as an embedding:
 # 
 # <img src="images/inceptionv3.png" style="width:70%">
 
@@ -126,7 +126,7 @@ def get_cnn_encoder():
 # ```
 
 
-
+# you must create the following files and copy to codes/ folder!!!
 # load prepared embeddings
 train_img_embeds = utils.read_pickle("train_img_embeds.pickle")
 train_img_fns = utils.read_pickle("train_img_fns.pickle")
