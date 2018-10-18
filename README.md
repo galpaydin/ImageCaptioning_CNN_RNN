@@ -1,7 +1,7 @@
 # ML_Image Captioning
 
 ##
-1. To increase notebook process speed needed for the exeqution of training process: Google Colab was used which is defined below
+1. To increase notebook process speed needed for the exeqution of training process: Google Colab which is defined below
 2. Repository includes (py) codes as well as jupiter notebook codes for Image Captioning model + train + test
 3. Image Captionin model contains:
 3.1 Pretrained CNN encoder (last hidden layer of IncetionV3) as an image embedding to RNN
